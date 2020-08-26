@@ -53,7 +53,7 @@ void ATankGameModeBase::ActorDied(AActor * DeadActor)
 	}
 	else if (ASTrackerBot* TrackerBot = Cast<ASTrackerBot>(DeadActor))
 	{
-		//TrackerBot->HandleDestructionTracker();
+		
 		UE_LOG(LogTemp, Warning, TEXT("TrackerDestroyed"));
 		ChangeScore(150);
 
